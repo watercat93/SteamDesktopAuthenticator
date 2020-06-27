@@ -2,7 +2,7 @@
   <img  src="https://raw.githubusercontent.com/Jessecar96/SteamDesktopAuthenticator/master/icon.png" height="64" width="64" />
   <br/>
   Steam Desktop Authenticator - Updated to compile on Linux with MonoDevelop <br/>
-
+ 
 </h1>
 
 <p align="center">
