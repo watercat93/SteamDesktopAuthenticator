@@ -2,12 +2,13 @@
   <img  src="https://raw.githubusercontent.com/Jessecar96/SteamDesktopAuthenticator/master/icon.png" height="64" width="64" />
   <br/>
   Steam Desktop Authenticator - Updated to compile on Linux with MonoDevelop <br/>
-<a href="https://github.com/Jessecar96/SteamDesktopAuthenticator/releases/latest">here</a>
+
 </h1>
 
 <p align="center">
-  <b>Attempting to fix the linux build <br/>
-
+  <b>Attempting to fix the linux build <br/><br/>
+ <b>If you aren't interested in fixing the issues I reccomend using WINE, NEVER download a windows version from anywhere else<br/>
+   <a href="https://github.com/Jessecar96/SteamDesktopAuthenticator/releases/latest">Jessecar96 windows build here</a>
 
 **REMEMBER: Always make backups of your `maFiles` directory! If you lose your encryption key or delete `maFiles` by accident AND you didn't save your revocation code, you are screwed.**
 
