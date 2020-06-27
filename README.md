@@ -6,8 +6,7 @@
 </h1>
 
 <p align="center">
-  Attempting to fix the linux build <br/>
-  <sup><b>We are not affiliated with Steam or Scrap.TF in any way!</b> This project is run by community volunteers.
+  <b>Attempting to fix the linux build <br/>
 
 
 **REMEMBER: Always make backups of your `maFiles` directory! If you lose your encryption key or delete `maFiles` by accident AND you didn't save your revocation code, you are screwed.**
@@ -18,10 +17,4 @@ IF you lost your `maFiles` OR lost your encryption key, go [here](https://store.
 
 If you did not follow the directions and did not write your revocation code down, you're well and truly screwed. The only option is beg to [Steam Support](https://support.steampowered.com/) and say you lost your mobile authenticator and the revocation code.
 
-## Detailed setup instructions
-
-[How to use SDA on multiple computers.](https://github.com/Jessecar96/SteamDesktopAuthenticator/wiki/Using-SDA-on-multiple-computers)
-
-
-## Command line REMOVED
 
