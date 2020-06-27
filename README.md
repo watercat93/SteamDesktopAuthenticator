@@ -9,6 +9,15 @@
   <b>Attempting to fix the linux build <br/><br/>
  <b>If you aren't interested in fixing the issues I reccomend using WINE, NEVER download a windows version from anywhere else<br/>
    <a href="https://github.com/Jessecar96/SteamDesktopAuthenticator/releases/latest">Jessecar96 windows build here</a>
+   
+   </b><br>
+   <h1> Issues / fixes </h1>
+   
+   There was a bunch of dependancy problems with Newtonsoft.Json, I had to remove and hack fix some of the code - there is no longer command line options <br/>
+   <br> the BIGGEST issue is that  <h1>VIEW CONFIRMATIONS CRASHES  </h1> it used to do the same on windows 7 and I had to find a different version of microsofts vc redistributables. </br> </br>
+   
+   Pulling from this fork should allow you to pull the project and run it without error
+   
 
 **REMEMBER: Always make backups of your `maFiles` directory! If you lose your encryption key or delete `maFiles` by accident AND you didn't save your revocation code, you are screwed.**
 
