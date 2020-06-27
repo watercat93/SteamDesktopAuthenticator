@@ -16,7 +16,7 @@
    There was a bunch of dependancy problems with Newtonsoft.Json, I had to remove and hack fix some of the code - there is no longer command line options <br/>
    <br> the BIGGEST issue is that  <h1>VIEW CONFIRMATIONS CRASHES  </h1> it used to do the same on windows 7 and I had to find a different version of microsofts vc redistributables. </br> </br> </b>
    
-   Pulling from this fork should allow you to pull the project and run it without error
+   Pulling from this fork should allow you to pull the project and run it without error in MonoDevelop <br/>
    
 
 **REMEMBER: Always make backups of your `maFiles` directory! If you lose your encryption key or delete `maFiles` by accident AND you didn't save your revocation code, you are screwed.**
