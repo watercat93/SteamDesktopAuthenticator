@@ -17,7 +17,7 @@
    <br> the BIGGEST issue is that  <h1>VIEW CONFIRMATIONS CRASHES  </h1> it used to do the same on windows 7 and I had to find a different version of microsofts vc redistributables. </br> </br> </b>
    
    Pulling from this fork should allow you to pull the project and run it without error in MonoDevelop <br/><br/>
-   
+   First pulled 27th June 2020 </br><br/>
 
 **REMEMBER: Always make backups of your `maFiles` directory! If you lose your encryption key or delete `maFiles` by accident AND you didn't save your revocation code, you are screwed.**
 
