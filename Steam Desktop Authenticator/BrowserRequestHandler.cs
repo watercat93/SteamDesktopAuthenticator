@@ -19,10 +19,10 @@ namespace Steam_Desktop_Authenticator
         public static readonly string VersionNumberString = String.Format("Chromium: {0}, CEF: {1}, CefSharp: {2}",
             Cef.ChromiumVersion, Cef.CefVersion, Cef.CefSharpVersion);
 
-        bool IRequestHandler.OnBeforeBrowse(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, bool isRedirect)
-        {
-            return false;
-        }
+      //  bool IRequestHandler.OnBeforeBrowse(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, bool isRedirect)
+       // {
+        //    return false;
+      //  }
 
         bool IRequestHandler.OnOpenUrlFromTab(IWebBrowser browserControl, IBrowser browser, IFrame frame, string targetUrl, WindowOpenDisposition targetDisposition, bool userGesture)
         {
@@ -45,7 +45,7 @@ namespace Steam_Desktop_Authenticator
             // TODO: Add your own code here for handling scenarios where a plugin crashed, for one reason or another.
         }
 
-        CefReturnValue IRequestHandler.OnBeforeResourceLoad(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, IRequestCallback callback)
+        CefReturnValue IRequestHandler(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, IRequestCallback callback)
         {   
             // Check if the session is expired
             if (request.Url == "steammobile://lostauth")
@@ -72,11 +72,11 @@ namespace Steam_Desktop_Authenticator
             }
         }
 
-        bool IRequestHandler.GetAuthCredentials(IWebBrowser browserControl, IBrowser browser, IFrame frame, bool isProxy, string host, int port, string realm, string scheme, IAuthCallback callback)
-        {
-            callback.Dispose();
-            return false;
-        }
+       // void IRequestHandler.GetAuthCredentials(IWebBrowser browserControl, IBrowser browser, IFrame frame, bool isProxy, string host, int port, string realm, string scheme, IAuthCallback callback)
+      //  {
+       //     callback.Dispose();
+      //      return;
+      //  }
 
         void IRequestHandler.OnRenderProcessTerminated(IWebBrowser browserControl, IBrowser browser, CefTerminationStatus status)
         {
@@ -88,20 +88,20 @@ namespace Steam_Desktop_Authenticator
             return false;
         }
 
-        bool IRequestHandler.OnProtocolExecution(IWebBrowser browserControl, IBrowser browser, string url)
-        {
-            return false;
-        }
+      // bool IRequestHandler.OnProtocolExecution(IWebBrowser browserControl, IBrowser browser, string url)
+       // {
+       //     return false;
+        //}
 
         void IRequestHandler.OnRenderViewReady(IWebBrowser browserControl, IBrowser browser)
         {
 
         }
 
-        bool IRequestHandler.OnResourceResponse(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, IResponse response)
-        {
-            return false;
-        }
+      //  bool IRequestHandler.OnResourceResponse(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, IResponse response)
+       // {
+       //     return false;
+       // }
 
         public void OnResourceLoadComplete(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, IResponse response, UrlRequestStatus status, long receivedContentLength)
         {
@@ -120,7 +120,22 @@ namespace Steam_Desktop_Authenticator
 
         public void OnResourceRedirect(IWebBrowser browserControl, IBrowser browser, IFrame frame, IRequest request, IResponse response, ref string newUrl)
         {
-            
+
+        }
+
+        public bool OnBeforeBrowse(IWebBrowser chromiumWebBrowser, IBrowser browser, IFrame frame, IRequest request, bool userGesture, bool isRedirect)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IResourceRequestHandler GetResourceRequestHandler(IWebBrowser chromiumWebBrowser, IBrowser browser, IFrame frame, IRequest request, bool isNavigation, bool isDownload, string requestInitiator, ref bool disableDefaultHandling)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool GetAuthCredentials(IWebBrowser chromiumWebBrowser, IBrowser browser, string originUrl, bool isProxy, string host, int port, string realm, string scheme, IAuthCallback callback)
+        {
+            throw new NotImplementedException();
         }
     }
 }

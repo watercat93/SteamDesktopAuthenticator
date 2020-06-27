@@ -64,3 +64,9 @@ If your problem doesn't appear on the list or none of the solutions worked, subm
 - Select Project->Active Configuration->Release (this will make this application run faster)
 - Select Build->Build All. The package should now build successfully.
 - The resulting executable and files will be in "Steam Desktop Authenticator/bin/Release"
+“#test2>>README.md
+git init
+git add .
+git remote add origin https://github.com/watercat93/linux-SteamDesktopAuth-fixes
+git push -u origin master
+echo “#test2

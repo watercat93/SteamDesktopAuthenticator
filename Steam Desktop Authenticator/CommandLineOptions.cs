@@ -1,4 +1,5 @@
-﻿using CommandLine;
+﻿using System;
+using CommandLine;
 using CommandLine.Text;
 
 namespace Steam_Desktop_Authenticator
@@ -13,14 +14,16 @@ namespace Steam_Desktop_Authenticator
           HelpText = "Start minimized")]
         public bool Silent { get; set; }
 
-        [ParserState]
-        public IParserState LastParserState { get; set; }
-
-        [HelpOption]
-        public string GetUsage()
-        {
-            return HelpText.AutoBuild(this,
-              (HelpText current) => HelpText.DefaultParsingErrorsHandler(this, current));
+       // public static explicit operator Type(CommandLineOptions v)
+       // {
+          //  throw new NotImplementedException();
         }
+
+        // [ParserState]
+        //  public IParserState LastParserState { get; set; }
+
+        //   [HelpOption]
+        // public string GetUsage() => HelpText.AutoBuild(this,
+        //(HelpText current) => HelpText.DefaultParsingErrorsHandler(this, current));
     }
-}
+

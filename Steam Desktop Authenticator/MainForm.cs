@@ -110,6 +110,11 @@ namespace Steam_Desktop_Authenticator
             }
         }
 
+        internal void SetEncryptionKey(object encryptionKey)
+        {
+            throw new NotImplementedException();
+        }
+
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -147,6 +152,11 @@ namespace Steam_Desktop_Authenticator
                     new InstallRedistribForm(true).ShowDialog();
                 }
             }
+        }
+
+        internal void StartSilent(object silent)
+        {
+            throw new NotImplementedException();
         }
 
         private void btnManageEncryption_Click(object sender, EventArgs e)
