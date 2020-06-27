@@ -14,7 +14,7 @@
    <h1> Issues / fixes </h1>
    
    There was a bunch of dependancy problems with Newtonsoft.Json, I had to remove and hack fix some of the code - there is no longer command line options <br/>
-   <br> the BIGGEST issue is that  <h1>VIEW CONFIRMATIONS CRASHES  </h1> it used to do the same on windows 7 and I had to find a different version of microsofts vc redistributables. </br> </br>
+   <br> the BIGGEST issue is that  <h1>VIEW CONFIRMATIONS CRASHES  </h1> it used to do the same on windows 7 and I had to find a different version of microsofts vc redistributables. </br> </br> </b>
    
    Pulling from this fork should allow you to pull the project and run it without error
    
